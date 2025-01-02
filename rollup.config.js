@@ -6,6 +6,7 @@ import resolve from '@rollup/plugin-node-resolve';
 import livereload from 'rollup-plugin-livereload';
 import css from 'rollup-plugin-css-only';
 import typescript from '@rollup/plugin-typescript'
+import { injectManifest } from 'rollup-plugin-workbox'
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -45,6 +46,14 @@ export default {
 				dev: !production
 			}
 		}),
+
+		injectManifest({
+      swSrc: 'src/sw.ts',
+      swDest: 'public/sw.js',
+      globDirectory: 'public',
+      globPatterns: ['**/*.{html,js,css,png,webp,ico}'],
+    }),
+
 		// we'll extract any component CSS out into
 		// a separate file - better for performance
 		css({ output: 'bundle.css' }),
