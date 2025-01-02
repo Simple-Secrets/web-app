@@ -1,19 +1,10 @@
 <script>
+  import { Router, Route, Link } from 'svelte-routing';
+  import LandingPage from './routes/LandingPage.svelte';
+  import WebApp from './routes/WebApp.svelte';
 </script>
 
-<style>
-</style>
-
-<h1>Hello World</h1>
-
-<form name="contact" netlify>
-  <p>
-    <label>Name <input type="text" name="name" /></label>
-  </p>
-  <p>
-    <label>Email <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>
+<Router>
+  <Route path="/" component={LandingPage} />
+  <Route path="/app/*" component={WebApp} />
+</Router>
