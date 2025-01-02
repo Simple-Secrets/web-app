@@ -51,7 +51,7 @@ export default {
       swSrc: 'src/sw.ts',
       swDest: 'public/sw.js',
       globDirectory: 'public',
-      globPatterns: ['**/*.{html,js,css,png,webp,ico}'],
+      globPatterns: ['**/*.{html,js,css,png,webp,ico,txt,webmanifest,svg}'],
     }),
 
 		// we'll extract any component CSS out into
