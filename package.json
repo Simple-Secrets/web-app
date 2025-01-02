@@ -6,7 +6,7 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "start": "sirv public --no-clear --single"
+    "start": "sirv public --host --no-clear --single"
   },
   "engines": {
     "node": ">=22"
