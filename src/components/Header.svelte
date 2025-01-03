@@ -1,6 +1,6 @@
 <header class="bg-base-200 p-8 text-center">
-  <h2 class="text-4xl font-bold mb-4 text-white">Manage Your Passwords with Ease</h2>
-  <p class="text-lg text-white mb-8">SimpleSecrets helps you keep your passwords safe and secure. Never forget a password again!</p>
+  <h2 class="text-4xl font-bold mb-4 ">Manage Your Passwords with Ease</h2>
+  <p class="text-lg text-whi mb-8">SimpleSecrets helps you keep your passwords safe and secure. Never forget a password again!</p>
   <a href="#get-started" class="btn btn-primary">Get Started</a>
   <div class="mt-12">
     <svg class="animate-bounce w-6 h-6 mx-auto text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
