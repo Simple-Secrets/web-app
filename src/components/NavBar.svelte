@@ -1,8 +1,13 @@
-<script lang="ts">
+<script>
   import { t } from 'svelte-i18n';
-  import { onMount } from 'svelte'
-
+  import { onMount } from 'svelte';
   import { setupDropdownListeners } from '../utils/dropdown/event-manager';
+  
+  let isDropdownOpen = false;
+
+  function toggleDropdown() {
+    isDropdownOpen = !isDropdownOpen;
+  }
 
   onMount(() => {
     const removeListeners = setupDropdownListeners('.dropdown-content a');
@@ -35,7 +40,12 @@
   <!-- Mobile view START -->
   <div class="navbar-start md:hidden">
     <div class="dropdown">
-      <button tabindex="0" class="btn btn-ghost" aria-label="Menu">
+      <button 
+        tabindex="0" 
+        class="btn btn-ghost" 
+        aria-label="Menu" 
+        on:click={toggleDropdown}
+        aria-expanded={isDropdownOpen}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="h-5 w-5"
@@ -50,7 +60,10 @@
         </svg>
       </button>
 
-      <ul class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+      <ul
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+        class:hidden={!isDropdownOpen}
+      >
         <li><a href="/app">{$t('navbar.menu.items.app')}</a></li>
         <li><a href="#pricing">{$t('navbar.menu.items.pricing')}</a></li>
         <li><a href="#about-us">{$t('navbar.menu.items.about-us')}</a></li>
