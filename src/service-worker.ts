@@ -2,7 +2,7 @@
 
 declare const self: ServiceWorkerGlobalScope;
 
-const CACHE_NAME = 'pwa-cache-v1';
+const CACHE_NAME = 'pwa-cache-v0.0.1';
 
 self.addEventListener('install', (event: ExtendableEvent) => {
   event.waitUntil(
