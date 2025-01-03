@@ -2,6 +2,7 @@
   import { t } from 'svelte-i18n';
   import { onMount } from 'svelte';
   import { setupDropdownListeners } from '../utils/dropdown/event-manager';
+  import logo from '../../public/squere-logo/192x192.webp';
   
   let isDropdownOpen = false;
 
@@ -19,7 +20,7 @@
 <nav class="navbar bg-base-100">
   <!-- Desktop view START -->
   <a href="/" class="navbar-start hidden md:flex">
-    <img class="w-8 rounded mr-2" src="/public/squere-logo/192x192.webp" alt="logo" />
+    <img class="w-8 rounded mr-2" src="{logo}" alt="logo" />
     <span class="text-xl">Simple Secrets</span>
   </a>
 
@@ -45,7 +46,8 @@
         class="btn btn-ghost" 
         aria-label="Menu" 
         on:click={toggleDropdown}
-        aria-expanded={isDropdownOpen}>
+        aria-expanded={isDropdownOpen}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="h-5 w-5"
