@@ -27,8 +27,9 @@
   <div class="navbar-center hidden md:flex">
     <ul class="menu menu-horizontal px-1">
       <li><a href="/app">{$t('navbar.menu.items.app')}</a></li>
-      <li><a href="#pricing">{$t('navbar.menu.items.pricing')}</a></li>
       <li><a href="#about-us">{$t('navbar.menu.items.about-us')}</a></li>
+      <li><a href="#pricing">{$t('navbar.menu.items.pricing')}</a></li>
+      <li><a href="#contacts">{$t('navbar.menu.items.contacts')}</a></li>
     </ul>
   </div>
 
@@ -68,8 +69,9 @@
         class:hidden={!isDropdownOpen}
       >
         <li><a href="/app">{$t('navbar.menu.items.app')}</a></li>
-        <li><a href="#pricing">{$t('navbar.menu.items.pricing')}</a></li>
         <li><a href="#about-us">{$t('navbar.menu.items.about-us')}</a></li>
+        <li><a href="#pricing">{$t('navbar.menu.items.pricing')}</a></li>
+        <li><a href="#contacts">{$t('navbar.menu.items.contacts')}</a></li>
       </ul>
     </div>
   </div>
