@@ -7,12 +7,14 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: 'index.html',
+        sw: 'src/service-worker.ts',
       },
       output: {
         entryFileNames: (chunk) => {
-          return (chunk.name === 'sw')
-            ? 'sw.js'
-            : 'assets/[name]-[hash].js';
+          if (chunk.name === 'sw') {
+            return 'sw.js';
+          }
+          return 'assets/[name]-[hash].js';
         },
       },
     },
