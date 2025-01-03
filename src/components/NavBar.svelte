@@ -20,15 +20,15 @@
 
   <div class="navbar-center hidden md:flex">
     <ul class="menu menu-horizontal px-1">
-      <li><a href="/app">App</a></li>
-      <li><a href="#pricing">Pricing</a></li>
-      <li><a href="#about-us">About Us</a></li>
+      <li><a href="/app">{$t('navbar.menu.items.app')}</a></li>
+      <li><a href="#pricing">{$t('navbar.menu.items.pricing')}</a></li>
+      <li><a href="#about-us">{$t('navbar.menu.items.about-us')}</a></li>
     </ul>
   </div>
 
   <div class="navbar-end hidden md:flex">
-    <button class="btn btn-ghost mr-2">{$t('login')}</button>
-    <button class="btn btn-primary">{$t('signup')}</button>
+    <button class="btn btn-ghost mr-2">{$t('navbar.auth.login')}</button>
+    <button class="btn btn-primary">{$t('navbar.auth.signup')}</button>
   </div>
   <!-- Desktop view END -->
 
@@ -51,9 +51,9 @@
       </button>
 
       <ul class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-        <li><a href="/app">App</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#about-us">About Us</a></li>
+        <li><a href="/app">{$t('navbar.menu.items.app')}</a></li>
+        <li><a href="#pricing">{$t('navbar.menu.items.pricing')}</a></li>
+        <li><a href="#about-us">{$t('navbar.menu.items.about-us')}</a></li>
       </ul>
     </div>
   </div>
@@ -65,7 +65,7 @@
   </a>
 
   <div class="navbar-end md:hidden">
-    <button class="btn btn-ghost">{$t('login')}</button>
+    <button class="btn btn-ghost">{$t('navbar.auth.login')}</button>
   </div>
   <!-- Mobile view END -->
 </nav>
