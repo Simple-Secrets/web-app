@@ -1,7 +1,7 @@
 {
   "name": "Simple Secrets",
   "short_name": "Secrets",
-  "description": "A simple web app to store secrets",
+  "description": "A simple application to store secrets",
   "start_url": "/app",
   "icons": [
     {
@@ -29,5 +29,6 @@
   ],
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
-  "display": "standalone"
+  "display": "standalone",
+  "categories": ["utilities", "productivity", "password manager"]
 }
