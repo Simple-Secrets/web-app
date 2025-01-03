@@ -4,6 +4,8 @@ declare const self: ServiceWorkerGlobalScope;
 
 const CACHE_NAME = 'pwa-cache-v0.0.1';
 
+// TODO: Fix cache clearing after deploying a new version on Netlify
+
 self.addEventListener('install', (event: ExtendableEvent) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
