@@ -18,10 +18,10 @@
 
 <nav class="navbar bg-base-100">
   <!-- Desktop view START -->
-  <div class="navbar-start hidden md:flex">
+  <a href="/" class="navbar-start hidden md:flex">
     <img class="w-8 rounded mr-2" src="/public/squere-logo/192x192.webp" alt="logo" />
     <span class="text-xl">Simple Secrets</span>
-  </div>
+  </a>
 
   <div class="navbar-center hidden md:flex">
     <ul class="menu menu-horizontal px-1">
