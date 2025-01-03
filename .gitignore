@@ -1,7 +1,0 @@
-node_modules
-dist
-
-public/sw.js
-public/build
-
-.DS_Store
