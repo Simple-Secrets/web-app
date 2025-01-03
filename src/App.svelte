@@ -5,8 +5,6 @@
   import WebApplication from './pages/WebApplication.svelte';
 </script>
 
-<h1>Test</h1>
-
 <Router>
   <Route path="/"><LandingPage /></Route>
   <Route path="/app/*"><WebApplication /></Route>
