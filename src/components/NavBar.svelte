@@ -74,7 +74,7 @@
   </div>
 
   <a href="/" class="navbar-center btn btn-ghost text-xl md:hidden">
-    <img class="w-8 rounded" src="/public/squere-logo/192x192.webp" alt="logo" />
+    <img class="w-8 rounded" src="{logo}" alt="logo" />
     <span class="hidden sm:inline">Simple Secrets</span>
     <span class="inline sm:hidden">Secrets</span>
   </a>
