@@ -1,6 +1,8 @@
 {
   "name": "Simple Secrets",
   "short_name": "Secrets",
+  "description": "A simple web app to store secrets",
+  "start_url": "/app",
   "icons": [
     {
       "src": "/public/squere-logo/192x192.webp",
