@@ -1,41 +1,7 @@
 {
-  "compilerOptions": {
-    /* Type Checking */
-    "strict": true,
-    "strictNullChecks": true,
-    "strictBindCallApply": true,
-    "strictFunctionTypes": true,
-    "strictPropertyInitialization": true,
-    "allowUnreachableCode": false,
-    "allowUnusedLabels": false,
-    "exactOptionalPropertyTypes": false,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitOverride": true,
-    "noImplicitReturns": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "noUncheckedIndexedAccess": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitThis": true,
-    "noImplicitAny": true,
-    "skipLibCheck": true,
-
-    /* Modules */
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "baseUrl": "./src",
-
-    /* Emit */
-    "declaration": false,
-
-    /* Language and Environment */
-    "target": "ES2022",
-
-    /* Interop Constraints */
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true
-  },
-
-  "include": ["src/**/*.ts", "src/**/*.svelte"],
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
 }

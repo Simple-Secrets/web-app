@@ -1,6 +1,8 @@
 {
   "name": "Simple Secrets",
   "short_name": "Secrets",
+  "description": "A simple application to store secrets",
+  "start_url": "/app",
   "icons": [
     {
       "src": "/squere-logo/192x192.webp",
@@ -27,5 +29,6 @@
   ],
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
-  "display": "standalone"
+  "display": "standalone",
+  "categories": ["utilities", "productivity", "password manager"]
 }

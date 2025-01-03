@@ -1,0 +1,18 @@
+{
+  "welcome": "Hello World!",
+
+  "navbar": {
+    "menu": {
+      "items": {
+        "app": "App",
+        "pricing": "Pricing",
+        "about-us": "About Us"
+      }
+    },
+
+    "auth": {
+      "login": "Login",
+      "signup": "SignUp"
+    }
+  }
+}
