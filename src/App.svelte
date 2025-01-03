@@ -1,11 +1,13 @@
 <script>
-  import { Router, Route } from 'svelte-routing';
+  import { Router, Route, Link } from 'svelte-routing';
 
-  import LandingPage from './routes/LandingPage.svelte';
-  import WebApplication from './routes/WebApplication.svelte';
+  import LandingPage from './pages/LandingPage.svelte';
+  import WebApplication from './pages/WebApplication.svelte';
 </script>
 
+<h1>Test</h1>
+
 <Router>
-  <Route path="/" component={LandingPage} />
-  <Route path="/app/*" component={WebApplication} />
+  <Route path="/"><LandingPage /></Route>
+  <Route path="/app/*"><WebApplication /></Route>
 </Router>
